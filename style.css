@@ -4,15 +4,12 @@
     --ms-azul-soft: #ccdbe5;
     --ms-lavanda: #f1dbff;
     --ms-pinky: #fcd5e4;
-    --ms-bg: #f5f3ef;
-    --ms-text-dark: #2d3748;
-    --ms-text-muted: #4a5568;
-    --ms-role-color: #5a6b8a;
+    --ms-texto-dark: #7a7e5a;
 }
 
 body {
-    background-color: var(--ms-bg);
-    color: var(--ms-text-dark);
+    background-color: var(--ms-crema);
+    color: var(--ms-texto-dark);
 }
 
 .navbar-custom {
@@ -21,28 +18,28 @@ body {
 }
 
 .text-gradient-pinky {
-    background: linear-gradient(to right, #8a8d6f, #b8bc96);
+    background: linear-gradient(to right, var(--ms-verde), var(--ms-pinky));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .btn-pinky {
     background-color: var(--ms-verde);
-    color: #ffffff !important;
+    color: white !important;
     font-weight: 700;
     border-radius: 1rem;
     padding: 0.7rem 1.8rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 14px 0 rgba(184, 188, 150, 0.6);
+    box-shadow: 0 4px 14px 0 rgba(184, 188, 150, 0.4);
     display: inline-block;
 }
 
 .btn-pinky:hover {
-    background-color: #a1a57e;
-    transform: translateY(-2px);
+    background-color: var(--ms-azul-soft);
+    color: var(--ms-texto-dark) !important;
 }
 
-.bg-slate-900 {
+.bg-slate-900, .bg-slate-950 {
     background-color: white !important;
     border: 1px solid var(--ms-azul-soft) !important;
 }
@@ -56,26 +53,34 @@ body {
 }
 
 .text-\[--ms-azul-soft\] {
-    color: var(--ms-role-color) !important;
-    font-weight: 700 !important;
+    color: var(--ms-texto-dark) !important;
+    font-weight: 800 !important;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
     display: block;
 }
 
+.text-white {
+    color: var(--ms-texto-dark) !important;
+}
+
+.text-gray-300, .text-gray-400, .text-gray-500 {
+    color: var(--ms-texto-dark) !important;
+    opacity: 0.8;
+}
+
+.text-rose-300, .text-rose-400, .text-pinky-main {
+    color: var(--ms-verde) !important;
+}
+
+.bg-rose-400\/10 {
+    background-color: var(--ms-pinky) !important;
+}
+
 footer {
-    background-color: var(--ms-crema) !important;
-    border-top: 2px solid var(--ms-azul-soft) !important;
+    background-color: var(--ms-azul-soft) !important;
+    color: var(--ms-texto-dark) !important;
 }
 
-.shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-}
-
-.text-white { 
-    color: var(--ms-text-dark) !important; 
-}
-
-.text-gray-300, .text-gray-400 { 
-    color: var(--ms-text-muted) !important; 
+.bg-slate-800\/50 {
+    background-color: var(--ms-lavanda) !important;
 }
