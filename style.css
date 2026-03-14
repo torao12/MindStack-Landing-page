@@ -57,9 +57,10 @@ body {
 
 .text-\[--ms-azul-soft\] {
     color: var(--ms-role-color) !important;
-    font-weight: 600;
+    font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    display: block;
 }
 
 footer {
@@ -69,4 +70,12 @@ footer {
 
 .shadow-lg {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.text-white { 
+    color: var(--ms-text-dark) !important; 
+}
+
+.text-gray-300, .text-gray-400 { 
+    color: var(--ms-text-muted) !important; 
 }
